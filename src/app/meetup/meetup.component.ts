@@ -15,11 +15,15 @@ export class MeetupComponent implements OnInit {
   }
 
   increment(value: number) {
-    this.myCount += value
+    this.updateMyVar(value)
    }
 
   decrement(value: number) {
-    this.myCount -= value
+    this.updateMyVar(-value)
+   }
+
+   private updateMyVar(value: number) {
+     this.myCount += value
    }
 
 }
