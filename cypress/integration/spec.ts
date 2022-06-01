@@ -9,4 +9,11 @@ describe('My First Test', () => {
     cy.visit('meetup')
     cy.contains('Esta é uma página de demonstração para o meetup de TDD!')
   })
+
+  it('Visits the meetup page and click on increment button', () => {
+    cy.visit('meetup')
+    cy.contains('Esta é uma página de demonstração para o meetup de TDD!')
+    cy.get('#btn_increment').click()
+    cy.contains('O novo valor é: 3')
+  })
 })
