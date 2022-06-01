@@ -14,8 +14,12 @@ export class MeetupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  increment(value: number) { }
+  increment(value: number) {
+    this.myCount = value
+   }
 
-  decrement(value: number) { }
+  decrement(value: number) {
+    this.myCount = value * -1
+   }
 
 }
