@@ -22,4 +22,15 @@ describe('MeetupComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should increment variable', () => {
+    component.increment(2)
+    expect(component.myCount).toBe(2)
+  })
+
+  it('should decrement variable', () => {
+    component.decrement(2)
+    expect(component.myCount).toBe(-2)
+  })
+
 });

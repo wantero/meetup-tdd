@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeetupComponent implements OnInit {
 
+  myCount: number = 0
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  increment(value: number) {
+    this.updateMyVar(value)
+   }
+
+  decrement(value: number) {
+    this.updateMyVar(-value)
+   }
+
+   private updateMyVar(value: number) {
+     this.myCount += value
+   }
 }
