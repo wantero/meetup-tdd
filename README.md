@@ -20,7 +20,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The Cypress schematic we have installed wraps these commands so they integrate with Angular.
+
+`ng run $project-name$:cypress-run` – Starts an Angular development server (ng serve), then calls npx cypress run.\
+`ng run $project-name$:cypress-open` – Starts an Angular development server (ng serve), then calls npx cypress open.\
+
+`$project-name$` is a placeholder. Insert the name of the respective Angular project. This is typically the same as the directory name. If not, it can be found in angular.json in the projects object.
 
 ## Further help
 
