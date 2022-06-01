@@ -25,7 +25,4 @@ export class MeetupComponent implements OnInit {
    private updateMyVar(value: number) {
      this.myCount += value
    }
-
-   reduceCoverage() {}
-
 }
