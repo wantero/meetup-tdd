@@ -26,4 +26,6 @@ export class MeetupComponent implements OnInit {
      this.myCount += value
    }
 
+   reduceCoverage() {}
+
 }
